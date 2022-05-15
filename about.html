@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ABOUT US SECTION</title>      
+</head>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Handlee', cursive;
+}
+body
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #313131;
+}
+.container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:1200px;
+    flex-wrap: wrap;
+}
+.container .card
+{
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background: #3f3f3f;
+}
+.container .card::before
+{
+    content:'';
+    position: absolute;
+    top:0;
+    right:0;
+    border: 20px solid transparent;
+    border-top:20px solid #ff3b7e;
+    border-right: 20px solid #ff3b7e;
+}
+.container .card.active::before
+{
+    border-top: 20px solid #17e78c;
+    border-right: 20px solid #17e78c;
+}
+.container .card .icon
+{
+    margin-bottom: 10px;
+}
+.container .card .icon img 
+{
+max-width:90px;
+}
+.container .card .content
+{
+ position: relative;
+ height: 215px;
+ overflow: hidden;   
+}
+.container .card.active .content
+{
+ height: auto;
+}
+.container .card .content::before
+{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(transparent,#3f3f3f);
+}
+.container .card.active .content::before
+{
+    display: none;
+}
+.container .card .content h3
+{
+    color: #fff;
+    font: size 1.4em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.container .card .content p
+{
+    font-weight: 300;
+    color: #ccc;
+}
+.container .card .more
+{
+    position: relative;
+    padding: 10px 15px;
+    background: #ff3b7e;
+    margin-top:15px;
+    display: inline-block;
+    cursor:pointer;
+    text-transform: uppercase;
+    color: #383838;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+.container .card.active .more
+{
+    background: #17e78c;
+    color: #fff;
+    transition: 0.6s;
+}
+.container .card .more::before
+{
+    content: 'Read more';
+}
+.container .card.active .more::before
+{
+    content: 'Read Less';
+}
+</style>
+<body>
+    <div class ="container">
+        <div class="card">
+            <div class="icon">
+              <img src="E:\HTML project\IMG_20211127_141012_590.jpg">
+            </div>
+            <div class="content">
+              <h3>DEVELOPER KARAN</h3>
+              <P> MY self Karan Rajendra Kadlag I am from Nashik Mahahrashtra. I am studing in Amruthvahini polytechnic Enginearing in branch of IT (Information Technology) first year second semister and this is our micro-project on building an website of covid information and survey using html css and java script</br><br>NAME-KARAN KADLAG</br><br>ROLLNO-25</br><br>SUBJECT-WPD</br><br>CLASS-IF2I</br></P>
+            </div>
+            <a class="more"></a>
+        </div>     
+           <div class="card">
+            <div class="icon">
+              <img src="E:\HTML project\rohan.jpeg">
+            </div>
+            <div class="content">
+              <h3>ABOUT ROHAN</h3>
+              <P> MY self Rohan sanjiv Deshmukh I am from Sangmner Mahahrashtra. I am studing in Amruthvahini polytechnic Enginearing in branch of IT (Information Technology) first year second semister and this is our micro-project on building an website of covid information and survey using html css and java script</br><br>NAME-ROHAN DESHMUKH</br><br>ROLLNO-15</br><br>SUBJECT-WPD</br><br>CLASS-IF2I</br></P>
+            </div>
+            <a class="more"></a>
+        </div>
+
+        <div class="card">
+            <div class="icon">
+              <img src="E:\HTML project\130930.jpg">
+            </div>
+            <div class="content">
+              <h3>ABOUT PRIYANKA</h3>
+              <P> MY self Priyanka navnath sable I am from Sangamneer Mahahrashtra. I am studing in Amruthvahini polytechnic Enginearing in branch of IT (Information Technology) first year second semister and this is our micro-project on building a Collage website using of  html css and java script</br><br>NAME-PRIYANKA SABLE</br><br>ROLLNO-47</br><br>SUBJECT-WPD</br><br>CLASS-IF2I</br></P>
+            </div>
+            <a class="more"></a>
+        </div>
+
+        
+        <div class="card">
+            <div class="icon">
+              <img src="E:\HTML project\WhatsApp Image 2022-05-13 at 8.45.17 PM.jpeg">
+            </div>
+            <div class="content">
+              <h3>ABOUT GURPREET</h3>
+              <P> Gurpreet kour Panjabi I am from Sangamneer Mahahrashtra. I am studing in Amruthvahini polytechnic Enginearing in branch of IT (Information Technology) first year second semister and this is our micro-project on building a Collage website using of  html css and java script</br><br>NAME-GURPREET PANJABI</br><br>ROLLNO-32</br><br>SUBJECT-WPD</br><br>CLASS-IF2I</br></P>
+            </div>
+            <a class="more"></a>
+        </div>
+
+        
+        <div class="card">
+            <div class="icon">
+              <img src="E:\HTML project\_sakuu_pvt_-20220514-0001.jpg">
+            </div>
+            <div class="content">
+              <h3>ABOUT SAKSHI</h3>
+              <P> MY self Sakshi Nandu Waghchaure I am from Sangamneer Mahahrashtra. I am studing in Amruthvahini polytechnic Enginearing in branch of IT (Information Technology) first year second semister and this is our micro-project on building a Collage website using of  html css and java script</br><br>NAME-SAKSHI WAGHCHAURE</br><br>ROLLNO-68</br><br>SUBJECT-WPD</br><br>CLASS-IF2I</br></P>
+            </div>
+            <a class="more"></a>
+        </div>
+
+        
+    </div>        
+    <script>
+        let more = document.querySelectorAll('.more');
+        for (let i = 0 ; i<more.length;i++){
+            more[i].addEventListener('click',function(){
+                more[i].parentNode.classList.toggle('active')
+            })
+        }
+    </script>
+</bod
